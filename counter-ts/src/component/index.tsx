@@ -1,0 +1,17 @@
+import React from "react";
+
+import Counter from "./counter";
+import exp from "constants";
+
+const CounterContainer: React.FC = () => {
+    return (
+        <div className="counter-container">
+            <Counter />
+            <Counter />
+            <Counter />
+            <Counter />
+        </div>
+    );
+}
+
+export default CounterContainer;
