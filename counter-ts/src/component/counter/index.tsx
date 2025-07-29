@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './style.css';
 const Counter: React.FC = () => {
 
     const [count, setCount] = React.useState(0);   
-
+    
+    useEffect(() => {
+        console.log('Counter component mounted');    
+        return function(){
+         console.log('Counter component unmounted');
+        };
+    }, []); 
+            useEffect(() => {
+        console.log('Counter component during updte');    }, [count]); 
 
     const increment = () => {
         setCount(count + 1);        }

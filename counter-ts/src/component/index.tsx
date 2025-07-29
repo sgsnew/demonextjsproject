@@ -7,9 +7,7 @@ const CounterContainer: React.FC = () => {
     return (
         <div className="counter-container">
             <Counter />
-            <Counter />
-            <Counter />
-            <Counter />
+          
         </div>
     );
 }
